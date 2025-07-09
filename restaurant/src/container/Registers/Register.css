@@ -1,0 +1,70 @@
+.app__register {
+  background-color: #0C0C0C;
+  color: #fff;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__register-content {
+  background-color: #1A1A1A;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.headtext__cormorant {
+  font-family: 'Cormorant Upright', serif;
+  font-size: 2.5rem;
+  color: #DCCA87;
+  margin-bottom: 1rem;
+}
+
+.p__opensans {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #aaa;
+}
+
+.app__register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.app__register-input {
+  padding: 0.75rem;
+  border: 1px solid #DCCA87;
+  background-color: transparent;
+  color: white;
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.app__register-input:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+.custom__button {
+  background-color: white;
+  border: none;
+  color: #0C0C0C;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom__button:hover {
+  background-color: #FFC300;
+}

@@ -60,6 +60,12 @@
   .app__aboutus-content_about p{
     color:#AAAAAA ;
     margin: 2rem 0;
+    text-align: center;
+  }
+  .custom__button:hover{
+    color: black;
+    background-color: white !important;
+    border-radius: 10px !important;
   }
   @media screen and (max-width:2000px){
     .app__aboutus-content_knife img{
@@ -68,7 +74,7 @@
       .app__aboutus-content_history p,
       .app__aboutus-content_about p{
         color:#AAAAAA ;
-        margin: 4rem 0;
+        margin: 5rem 3rem;
       }
       
   }

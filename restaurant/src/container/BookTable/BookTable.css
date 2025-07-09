@@ -1,0 +1,59 @@
+.app__booktable {
+  background-color: #0C0C0C;
+  color: #fff;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__booktable-content {
+  background-color: #1A1A1A;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.app__booktable-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.app__booktable-form input,
+.app__booktable-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #DCCA87;
+  background-color: transparent;
+  color: white;
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.app__booktable-form input:focus,
+.app__booktable-form textarea:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+.custom__button {
+  background-color: #DCCA87;
+  border: none;
+  color: #0C0C0C;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  padding: 0.75rem;
+}
+
+.custom__button:hover {
+  background-color: #e5c265;
+}

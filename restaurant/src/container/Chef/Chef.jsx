@@ -10,7 +10,7 @@ const Chef = () => (
     </div>
     <div className="app__wrapper_info"style={{color:'#DCCA87'}}>
       <SubHeading title="Chef's word"/>
-      <h1 className='headtext__cormorant'>What wew believe in</h1>
+      <h1 className='headtext__cormorant'>What New believe in</h1>
       <div className="app__chef-content" style={{color:'#FFF'}}>
         <div className="app__chef-content_quote">
           <img src={images.quote} alt="quote" />

@@ -17,7 +17,7 @@
 
 .app__wrapper_info {
     text-align: center;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -51,10 +51,12 @@
     margin-left: auto;
     margin-right: auto;
 }
-.custom__button:hover{
-    background-color: #FFF;
-    color: #0C0C0C;
+.app__wrapper_info .custom__button:hover{
+    background-color: #FFF !important;
+    color: #0C0C0C ;
+    border-radius: 10px;
 }
+
 /* Media Queries for Responsiveness */
 @media (min-width: 768px) {
     .app__header {

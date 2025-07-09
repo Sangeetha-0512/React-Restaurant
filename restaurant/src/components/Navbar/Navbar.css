@@ -14,6 +14,8 @@ body{
     box-sizing: border-box;
     overflow: hidden;
     position: fixed !important;
+    z-index: 1000;
+    
 }
 .app__navbar-logo{
     display: flex;
@@ -40,14 +42,16 @@ body{
 .app__navbar-links li a{
     color: white;
     text-decoration-line: none;
+    transition: 0.5s ease;
 }
 .app__navbar-links li a:hover{
     border-bottom: 1px solid #DCCA87;
+    transition: 0.5s ease;
 }
 .app__navbar-links li:hover{
     margin: 0 1rem;
     cursor: pointer;
-    color: var(--color-gray);
+    color: white;
 }
 .app_navbar-login{
     display: flex;
@@ -82,7 +86,7 @@ body{
     background-color: #0C0C0C;
     transition: 0.5s ease;
     flex-direction: column;
-    z-index: 25000;
+    z-index: 100000;
 }
 .hello{
     cursor: pointer;
