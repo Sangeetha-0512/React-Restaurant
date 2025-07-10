@@ -4,18 +4,14 @@ import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from '../../constants/images'
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-
-
-
 const Navbar = () => {
   const[toggle,settoggle]=useState(false);
   
   return(
-  // navbar
   <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        {/* navimg */}
-      <a href="home"><img src={images.gericht} alt="app logo"/></a>
+      {/* <a href="home"><img src={images.gericht} alt="app logo"/></a> */}
+      <Link to="/home" className="p__opensans" style={{ color: 'white', fontSize: '25px' }}><img src={images.gericht} alt="app logo"/></Link>
       </div>
       <ul className='app__navbar-links' style={{fontSize:'20px'}}>
         <li className="p__opensans" ><a href='#home' style={{fontSize:'25px'}}>Home</a></li>
@@ -25,18 +21,13 @@ const Navbar = () => {
         <li className='p__opensans'><a href='#contact'style={{fontSize:'25px'}}>Contact</a></li>
       </ul>
       <div className='app_navbar-login'>
-        {/* <a href='#login' className='p__opensans' style={{color:'white',fontSize:'25px'}}>Login  </a> */}
          <Link to="/login" className="p__opensans" style={{ color: 'white', fontSize: '25px' }}>Login</Link>
         <p style={{color:'white'}}>|</p>
-        {/* <a href='#register' className='p__opensans' style={{color:'white',fontSize:'25px'}}>Register  </a> */}
         <Link to="/register" className="p__opensans" style={{ color: 'white', fontSize: '25px' }}>Register</Link>
         <p style={{color:'white'}}>|</p>
-      {/* <a href='#booktable'className='p__opensans' style={{color:'white',fontSize:'25px'}}>Book Table</a> */}
       <Link to="/booktable" className="p__opensans" style={{ color: 'white', fontSize: '25px' }}>Book Table</Link>
       </div>
 
-
-      {/* hambugerMenu responsive */}
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu color='#fff' fontSize={27} className='hello'onClick={()=>{settoggle(true)}}/>
          {toggle && (
